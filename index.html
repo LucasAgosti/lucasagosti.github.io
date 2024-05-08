@@ -1,159 +1,75 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Fernandes - Product Designer</title>
+  <link rel="stylesheet" href="index.css"
+  <!-- Adicionar links para CSS aqui -->
+</head>
+<body>
 
-<html>
-	<head>
-		<title>Portfolio | Lucas Fernandes</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="shortcut icon" href="images/logo.png">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+  <header>
+    <!-- Logo no canto esquerdo -->
+    <div class="logo">
+      <a href="#home">Lucas Fernandes</a>
+    </div>
     
-	<body class="is-preload">
+    <!-- Navegação no canto direito -->
+    <nav>
+      <a href="#about">About</a>
+      <!-- Dropdown de idiomas -->
+      <div class="language-dropdown">
+        <button class="dropbtn">EN</button>
+        <div class="dropdown-content">
+          <a href="#english">EN - English (US)</a>
+          <a href="#portuguese">PT - Português (BR)</a>
+        </div>
+      </div>
+      <a href="#resume" class="resume-button">Resume</a>
+    </nav>
+  </header>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<h1>Lucas Fernandes</h1>
-					<p>Estudante de TI</p>
-				</header>
-				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Veja mais sobre mim</a>
-				</footer>
-			</section>
+  <main>
+    <!-- Seção de introdução -->
+    <section id="hero">
+      <h1>Lucas Fernandes</h1>
+      <h1>- Product Designer</h1>
+      <div class="hero-content">
+        <div class="social-links">
+          <!-- Substitua # pelos links das suas redes sociais -->
+          <a href="#" class="social-link email"><img src="path/to/email-icon.png" alt="Email"></a>
+          <a href="#" class="social-link linkedin"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
+          <a href="#" class="social-link website"><img src="path/to/website-icon.png" alt="Website"></a>
+          <a href="#" class="social-link twitter"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
+        </div>
+        <p>A designer and former software engineer specialist in designing accessible experiences that go beyond interfaces.</p>
+        </div>
+    </section>
+    
 
-		<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>Sobre mim</h2>
-				</header>
-				<p>Um estudante de computação cearense, apaixonado por música, esportes e design.<br />
-				Programador, guitarrista nas horas vagas e levantador<br />
-				ou líbero de vôlei quando necessário.</p>
-				<footer>
-					<a href="read-more.html" target="_blank" class="button style2 scrolly">Ler mais</a>
-				</footer>
-			</section>
+    <!-- Seção de projetos -->
+    <section id="projects">
+      <!-- Projeto 1 -->
+      <article>
+        <h2>Auralize</h2>
+        <p>An iOS application for performing acoustic measurements...</p>
+        <a href="#see-more">See more ></a>
+      </article>
+      <!-- Repetir para outros projetos -->
+    </section>
 
-		<!-- Feature 1 -->
-			<article class="container box style1 right">
-				<a href="#" class="image fit"><img src="images/selfie01.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Lucas, 19 anos</h2>
-					</header>
-					<p>Estudante de Engenharia de Computação. <br/>
-                    Atualmente trabalhando como desenvolvedor em Springboot.</p>
-				</div>
-			</article>
-        
-		<!-- Portfolio -->
-			<article class="container box style2">
-				<header>
-					<h2>Trabalho</h2>
-					<p>Alguns projetos pessoais e universitários realizados.<br />
-                    Os projetos e códigos estão em meu Github, link abaixo.</p>
-				</header>
-				<div class="inner gallery">
-					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="images/fulls/wk01full.png" class="image fit"><img src="images/thumbs/wk01thumb.png" alt="" title="Uma lista de afazeres desenvolvida" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/wk02full.png" class="image fit"><img src="images/thumbs/wk02thumb.png" alt="" title="Formulário de login" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/wk03full.png" class="image fit"><img src="images/thumbs/wk03thumb.png" alt="" title="Sliding login form" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/wk04full.png" class="image fit"><img src="images/thumbs/wk04thumb.png" alt="" title="Pagination" /></a></div>
-					</div>
-					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="images/fulls/wk05full.png" class="image fit"><img src="images/thumbs/wk05full.png" alt="" title="Ícones de redes sociais" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/artigofull.png" class="image fit"><img src="images/thumbs/artigothumb.png" alt="" title="Protótipo de um artigo científico sobre uso de IA na medicina" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/loginfull.png" class="image fit"><img src="images/thumbs/loginthumb.png" alt="" title="Interface de um formulário de login" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/gamefull.png" class="image fit"><img src="images/thumbs/gamethumb.png" alt="" title="Jogo desenvolvido em Java" /></a></div>
-					</div>
-				</div>
-			</article>
+    <!-- Seção de contato ou mais informações -->
+    <section id="contact">
+      <p>Made with love and a LOT of music.</p>
+      <p>© 2024 Lucas Fernandes.</p>
+      <!-- Adicionar links de contato e redes sociais aqui -->
+    </section>
+  </main>
 
-		<!-- Portfolio -->
-			<article class="container box style2">
-				<header>
-					<h2>Fotos</h2>
-					<p>Hobbies, paixão por música e voleibol<br /></p>
-				</header>
-				<div class="inner gallery">
-					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="images/fulls/guitars02.jpg" class="image fit"><img src="images/thumbs/guitars02.jpg" alt="" title="Setup para shows." /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/guitars03.jpg" class="image fit"><img src="images/thumbs/guitars03.jpg" alt="" title="Telecaster Strimberg." /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/guitars06.jpg" class="image fit"><img src="images/thumbs/guitars06thumb.png" alt="" title="Guitarra Epiphone LesPaul." /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/guitars07full.png" class="image fit"><img src="images/thumbs/guitars07thumb.png" alt="" title="Guitarra Epiphone LesPaul." /></a></div>
-					</div>
-					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="images/fulls/vol01.jpg" class="image fit"><img src="images/thumbs/vol01thumb.png" alt="" title="Primeiro jogo SEC-IFCE 2018." /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/vol02.jpg" class="image fit"><img src="images/thumbs/vol02thumb.png" alt="" title="Jogo contra o curso de turismo." /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/vol03.jpg" class="image fit"><img src="images/thumbs/vol03thumb.png" alt="" title="Jogo contra o curso de turismo." /></a></div>
-						<div class="col-3 col-12-mobile"><a href="images/fulls/vol04.jpg" class="image fit"><img src="images/thumbs/vol04.jpg" alt="" title="Time telemática 2018." /></a></div>
-					</div>
-				</div>
-			</article>
-        
-        
-            <article class="container box style3">
-				<header>
-					<h2>Habilidades e interesses</h2>
-				</header>
-				<section>
-					<div>
-					<p class="wide">Desenvolvimento Web</p>
-					<div class="abilities grey rounded-border">
-						<div class="container-padding dark-grey rounded-border" style="width: 70%">70%</div>
-					</div>
-                        
-                    <p class="wide">Inteligência Artificial</p>
-					<div class="abilities grey rounded-border">
-						<div class="container-padding dark-grey rounded-border" style="width: 55%">50%</div>
-					</div>
-                        
-                    <p class="wide">Inglês</p>
-					<div class="abilities grey rounded-border">
-						<div class="container-padding dark-grey rounded-border" style="width: 80%">80%</div>
-					</div>
-                    
-                    <p class="wide">Trabalho em Equipe</p>
-					<div class="abilities grey rounded-border">
-						<div class="container-padding dark-grey rounded-border" style="width: 95%">95%</div>
-					</div>
-                    
-                    <p class="wide">Comunicação</p>
-					<div class="abilities grey rounded-border">
-						<div class="container-padding dark-grey rounded-border" style="width: 90%">90%</div>
-					</div>
-				</div>  
-				</section>
-			</article>
+  <footer>
+    <!-- Informações de rodapé, como links de contato -->
+  </footer>
 
-		<section id="footer">
-			<ul class="icons">
-				<li><a href="https://www.facebook.com/LucasAgFernandes" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-				<li><a href="https://github.com/LucasAgosti" target="_blank" class="icon brands fa-github"><span class="label">Google+</span></a></li>
-				<li><a href="https://br.pinterest.com/lucas2605af/" target="_blank" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-				<li><a href="https://www.instagram.com/lucas.fernandesa/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="https://www.linkedin.com/in/lucasagosti/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-			</ul>
-            <div class="top">
-                <a href="#header" class="button style3 scrolly"><!-- Ícone -->To the top</a>
-            </div>
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Lucas Fernandes</li>
-				</ul>
-			</div>
-		</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
