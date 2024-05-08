@@ -1,0 +1,157 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Your Font Family', sans-serif; /* Substitua pelo nome da fonte desejada */
+    color: #ffffff; /* A cor do texto, conforme sua preferência ou design */
+    background-color: #000000; /* A cor de fundo, conforme sua preferência ou design */
+  }
+  
+  /* Estilos para a barra de navegação */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a; /* Ou a cor que você preferir */
+  }
+  
+  /* Estilização do nome no canto esquerdo da navbar */
+  .logo a {
+    color: #ffffff; /* Ou a cor que você preferir */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem; /* Ajuste para o tamanho desejado */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: #ffffff; /* Ou a cor que você preferir */
+    text-decoration: none;
+    margin-left: 2rem; /* Ajuste para o espaçamento desejado */
+    font-size: 1rem; /* Ajuste para o tamanho desejado */
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Estilo ao passar o mouse */
+  }
+  
+  /* Botão 'Resume' estilizado diferentemente */
+  .resume-button {
+    background-color: #4CAF50; /* Substitua pela cor do botão no design */
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 2em; /* Espaçamento adicional para o botão 'Resume' */
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+  }
+  
+  .resume-button:hover {
+    background-color: #367c39; /* Substitua pela cor do botão ao passar o mouse */
+  }
+  
+  /* Estilização do seletor de idioma */
+  header nav a.language-selector {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff; /* Estilo do sublinhado */
+  }
+  /* Estilos para o dropdown */
+  .language-dropdown {
+  position: relative;
+  display: inline-block;
+  }
+  
+  .dropbtn {
+  background-color: #1a1a1a; /* Ou a cor que você preferir */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+  
+  .language-dropdown:hover .dropbtn {
+  background-color: #333333; /* Ou a cor que você preferir ao passar o mouse */
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; /* Cor de fundo do menu dropdown */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  
+  .dropdown-content a {
+  color: black; /* Cor do texto dos links no menu dropdown */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  .dropdown-content a:hover {
+  background-color: #f1f1f1; /* Cor de fundo dos links ao passar o mouse */
+  }
+  
+  .language-dropdown:hover .dropdown-content {
+  display: block;
+  }
+  
+  #hero {
+  text-align: center;
+  background-color: #000; /* A cor de fundo do header */
+  color: #fff; /* Cor do texto */
+  padding: 100px 0; /* Ajuste o padding conforme necessário */
+  }
+  
+  #hero h1 {
+  font-size: 4rem; /* Tamanho grande para o título */
+  font-weight: 700; /* Peso da fonte para o título */
+  margin-bottom: 20px; /* Espaçamento entre o título e o conteúdo */
+  }
+  
+  .hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .social-links {
+  margin-right: 20px; /* Espaçamento entre
+  
+  
+  
+  
+  /* Estilos adicionais para o hover dos links podem ser adicionados aqui */
+  .social-link:hover {
+  /* Estilo para quando o mouse está sobre o link */
+  }
+  
+  
+  /* Responsividade da navbar (exemplo simples) */
+  @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  
+  .logo {
+    margin-bottom: 1rem;
+  }
+  
+  nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+  }
