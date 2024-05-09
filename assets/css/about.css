@@ -322,6 +322,16 @@ img {
     height: 480px;
 }
 
+.image-63 {
+    width: 328px;
+    height: 480px;
+}
+
+.image-64 {
+    width: 328px;
+    height: 480px;
+}
+
 .animate-in {
     animation: fadeIn 1s ease-out;
 }
