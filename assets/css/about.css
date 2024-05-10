@@ -358,3 +358,81 @@ img {
     opacity: 1; 
 }
    */
+
+@media (max-width: 575.98px) {
+
+    .footer {
+        margin-top: 64px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .div-block-194 {
+        display: block;
+    }
+
+    .link-block {
+        justify-content: center;
+        display: flex;
+    }
+
+    .text-block-94, .text-block-95 {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .div-block-195 {
+        margin-top: 40px;
+    }
+
+}
+
+/* Para telas maiores ou iguais a 576px e menores que 768px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .footer {
+        margin-top: 80px;
+        padding-top: 64px;
+        padding-bottom: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .div-block-194 {
+        display: block;
+    }
+
+    .link-block {
+        justify-content: center;
+        display: flex;
+    }
+
+    .text-block-94, .text-block-95 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .div-block-195 {
+        margin-top: 40px;
+    }
+}
+
+/* Para telas maiores ou iguais a 768px e menores que 992px */
+@media (min-width: 768px) and (max-width: 1047.98px) {
+
+    .footer {
+        margin-top: 80px;
+        padding-top: 72px;
+        padding-bottom: 88px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+/* Para telas maiores ou iguais a 992px */
+@media (min-width: 1048px) {
+    /* Adicione suas regras CSS para essa largura de tela aqui */
+}
+
