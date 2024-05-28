@@ -30,10 +30,11 @@ header {
 
 /* Estilização do nome no canto esquerdo da navbar */
 .logo a {
-  color: #ffffff; /* Ou a cor que você preferir */
+  color: #ffffff; 
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.5rem; /* Ajuste para o tamanho desejado */
+  font-weight: 400;
+  font-family: "Yellowtail", cursive;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -151,6 +152,8 @@ display: inline-block;
 }
 
 .text-p-74 {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
   color: #21B5B5;
   transition: 0.3s ease;
   cursor: default;
