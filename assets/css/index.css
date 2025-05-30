@@ -10,7 +10,7 @@ div {
 }
 
 body {
-  color: #ffffff; /* A cor do texto, conforme sua preferência ou design */
+  color: #F7F7F7; /* A cor do texto, conforme sua preferência ou design */
   background-color: #111416; /* A cor de fundo, conforme sua preferência ou design */
   flex-direction: column;
   font-family: Inter, Helvetica Neue, Helvetica, sans-serif; /* Substitua pelo nome da fonte desejada */
@@ -142,7 +142,7 @@ display: inline-block;
 }
 
 .text-block-82 {
-  color: #ffffff;
+  color: #F7F7F7;
   letter-spacing: -1px;
   font-family: Inter, sans-serif;
   font-size: 64px;
@@ -213,7 +213,7 @@ display: inline-block;
 }
 
 a {
-  color: #FFFFFF;
+  color: #F7F7F7;
   text-decoration: none;
 }
 
@@ -252,7 +252,7 @@ a:-webkit-any-link {
 }
 
 .text-block-95 {
-  color: #2a2a2b;
+  color: #F7F7F7;
   text-align: right;
   font-family: Inter, sans-serif;
   font-size: 18px;
@@ -371,7 +371,7 @@ a:-webkit-any-link {
 }
 
 .text-block-84 {
-  color: #2a2a2b;
+  color: #F7F7F7;
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 600;
