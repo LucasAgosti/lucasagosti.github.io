@@ -377,6 +377,13 @@ a:-webkit-any-link {
   font-weight: 600;
 }
 
+.text-block-85 {
+  color: #000000;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .div-block-189 {
   align-items: center;
   padding-left: 7px;
@@ -671,6 +678,83 @@ a:-webkit-any-link {
 
   .div-block-310 {
     display: block;
+  }
+
+  .wide-project-div.lovemypet {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+  }
+  
+  .wide-project-div.lovemypet.w-inline-block {
+    display: flex;
+  }
+
+  .w-inline-block {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wide-project-div.lovemypet {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+  }
+  
+  .wide-project-div.lovemypet.w-inline-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .wide-project-div.lovemypet .project-title-div.lock {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Corrigir espaçamentos e evitar quebra */
+  .project-title-div.lock img {
+    display: inline-block;
+  }
+  
+  /* Garante que os links não vão herdar espaços ou estilos inesperados */
+  a.wide-project-div {
+    all: unset;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Reaplicamos estilos removidos pelo "unset" */
+  a.wide-project-div.lovemypet {
+    background-image: url(../../images/Card-wide-pet.png);
+    background-position: 30%;
+    background-size: cover;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  a.wide-project-div.lovemypet:hover {
+    transform: scale(1.05);
+  }
+  
+  .link-veja-mais {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+  
+  .text-block-85 {
+    cursor: pointer;
+  }
+  
+  .link-veja-mais:hover .text-block-85 {
+    text-decoration: underline;
   }
 
   /* FOOTER */
