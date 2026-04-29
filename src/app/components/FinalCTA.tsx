@@ -46,7 +46,7 @@ export function FinalCTA() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a
-            href="mailto:hello@lucasfernandes.design"
+            href="lucasfernandesux@gmail.com"
             className="group flex items-center gap-3 bg-[#1a1a1a] text-white px-10 py-4 text-[13px] tracking-[0.1em] uppercase hover:bg-[#333] transition-all duration-400"
             style={{ fontFamily: "'Inter', sans-serif", fontWeight: 400 }}
           >
@@ -58,7 +58,7 @@ export function FinalCTA() {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/lucasagosti/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[13px] tracking-[0.1em] uppercase text-[#999] hover:text-[#555] transition-colors duration-300 underline underline-offset-4 decoration-[#ddd] hover:decoration-[#999]"

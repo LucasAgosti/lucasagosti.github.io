@@ -1,7 +1,9 @@
 import { useEffect } from "react";
 import { motion } from "motion/react";
-import { Linkedin, Mail, Github, ArrowUpRight } from "lucide-react";
+import { Linkedin, Mail, ArrowUpRight } from "lucide-react";
 import { dictionaries, type Locale } from "../data/i18n";
+import { contactLinks } from "../utils/contactLinks";
+import { WhatsAppIcon } from "../components/ui/whatsAppIcon";
 
 type ContatoProps = {
   locale?: Locale;
@@ -76,7 +78,11 @@ export function Contato({ locale = "pt" }: ContatoProps) {
           <div className="max-w-[760px]">
             <motion.p
               className="text-white/50 mb-10"
-              style={{ fontSize: "19px", fontWeight: 400, lineHeight: 1.75 }}
+              style={{
+                fontSize: "19px",
+                fontWeight: 400,
+                lineHeight: 1.75,
+              }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -86,7 +92,11 @@ export function Contato({ locale = "pt" }: ContatoProps) {
 
             <motion.p
               className="text-white/30 mb-20"
-              style={{ fontSize: "16px", fontWeight: 400, lineHeight: 1.8 }}
+              style={{
+                fontSize: "16px",
+                fontWeight: 400,
+                lineHeight: 1.8,
+              }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
@@ -102,7 +112,7 @@ export function Contato({ locale = "pt" }: ContatoProps) {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <a
-              href="https://linkedin.com"
+              href={contactLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2.5 bg-white/5 border border-[#20231F] rounded-xl px-7 py-4 text-[13px] tracking-[0.08em] uppercase text-white/60 hover:bg-[#B9F53E] hover:border-[#B9F53E] hover:text-[#0C0D0C] hover:scale-105 transition-all duration-400"
@@ -118,7 +128,7 @@ export function Contato({ locale = "pt" }: ContatoProps) {
             </a>
 
             <a
-              href="mailto:hello@lucasfernandes.design"
+              href={contactLinks.email}
               className="group inline-flex items-center gap-2.5 bg-[#B9F53E] border border-[#B9F53E] rounded-xl px-7 py-4 text-[13px] tracking-[0.08em] uppercase text-[#0C0D0C] hover:brightness-110 hover:scale-105 hover:gap-3 transition-all duration-400"
               style={{ fontWeight: 800 }}
             >
@@ -128,14 +138,14 @@ export function Contato({ locale = "pt" }: ContatoProps) {
             </a>
 
             <a
-              href="https://github.com"
+              href={contactLinks.whatsapp(locale)}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2.5 bg-white/5 border border-[#20231F] rounded-xl px-7 py-4 text-[13px] tracking-[0.08em] uppercase text-white/60 hover:bg-[#B9F53E] hover:border-[#B9F53E] hover:text-[#0C0D0C] hover:scale-105 transition-all duration-400"
               style={{ fontWeight: 700 }}
             >
-              <Github size={16} strokeWidth={2} />
-              {copy.github}
+              <WhatsAppIcon className="h-4 w-4" />
+              WhatsApp
               <ArrowUpRight
                 size={14}
                 strokeWidth={2.5}
