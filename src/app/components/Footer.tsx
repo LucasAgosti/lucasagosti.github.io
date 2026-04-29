@@ -1,7 +1,9 @@
-import { Linkedin, Mail, Github } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { useLocation } from "react-router";
 import { dictionaries } from "../data/i18n";
 import { getLocaleFromPath } from "../utils/localePaths";
+import { contactLinks } from "../utils/contactLinks";
+import { WhatsAppIcon } from "../components/ui/whatsAppIcon";
 
 export function Footer() {
   const location = useLocation();
@@ -22,14 +24,18 @@ export function Footer() {
             >
               Lucas Fernandes
             </span>
-            <span className="text-[11px] text-white/25" style={{ fontWeight: 400 }}>
+
+            <span
+              className="text-[11px] text-white/25"
+              style={{ fontWeight: 400 }}
+            >
               {copy.role}
             </span>
           </div>
 
           <div className="flex items-center gap-6">
             <a
-              href="https://linkedin.com"
+              href={contactLinks.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/25 hover:text-[#B9F53E] transition-colors duration-400"
@@ -37,21 +43,23 @@ export function Footer() {
             >
               <Linkedin size={17} strokeWidth={1.5} />
             </a>
+
             <a
-              href="mailto:hello@lucasfernandes.design"
+              href={contactLinks.email}
               className="text-white/25 hover:text-[#B9F53E] transition-colors duration-400"
               aria-label="Email"
             >
               <Mail size={17} strokeWidth={1.5} />
             </a>
+
             <a
-              href="https://github.com"
+              href={contactLinks.whatsapp(locale)}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/25 hover:text-[#B9F53E] transition-colors duration-400"
-              aria-label="GitHub"
+              aria-label="WhatsApp"
             >
-              <Github size={17} strokeWidth={1.5} />
+              <WhatsAppIcon className="h-[18px] w-[18px]" />
             </a>
           </div>
         </div>

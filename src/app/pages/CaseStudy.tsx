@@ -1037,7 +1037,7 @@ export function CaseStudy({ locale = "pt" }: CaseStudyProps) {
             </button>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/lucasagosti/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-[13px] tracking-[0.1em] uppercase text-white/30 hover:text-[#B9F53E] transition-colors duration-300"
