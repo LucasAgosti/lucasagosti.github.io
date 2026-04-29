@@ -1,6 +1,7 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import { motion, useInView } from "motion/react";
 import { dictionaries, type Locale } from "../data/i18n";
+import profileImage from "../assets/profile/lucas-fernandes.jpeg";
 
 function Reveal({
   children,
@@ -119,14 +120,17 @@ export function Sobre({ locale = "pt" }: SobreProps) {
             </Reveal>
 
             <Reveal delay={0.2} className="lg:w-[42%] flex items-start justify-center">
-              <div className="w-full aspect-square rounded-2xl bg-[#0C0D0C]/60 border border-[#20231F] flex items-center justify-center relative overflow-hidden group hover:border-[#B9F53E]/20 transition-all duration-700">
-                <div className="absolute inset-0 bg-[#B9F53E]/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <span
-                  className="text-[11px] tracking-[0.22em] uppercase text-white/12 group-hover:text-white/15 relative z-10 transition-colors duration-700"
-                  style={{ fontWeight: 600 }}
-                >
-                  {copy.visualPlaceholder}
-                </span>
+              <div className="w-full max-w-[520px] aspect-[4/5] rounded-2xl bg-[#141514] border border-[#20231F] relative overflow-hidden group hover:border-[#B9F53E]/25 transition-all duration-700">
+                <img
+                  src={profileImage}
+                  alt="Lucas Fernandes, Product Designer"
+                  className="h-full w-full object-cover grayscale-[15%] opacity-90 group-hover:opacity-100 group-hover:scale-[1.03] transition-all duration-700 ease-out"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0C0D0C]/45 via-transparent to-transparent pointer-events-none" />
+
+                <div className="absolute inset-0 bg-[#B9F53E]/[0.03] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+
               </div>
             </Reveal>
           </div>
