@@ -24,6 +24,7 @@ O projeto atual já está estruturado para os cases e para o deploy em GitHub Pa
 - Tailwind CSS v4
 - Motion
 - Lucide React
+- tipagem explícita com `tsc --noEmit` via `npm run typecheck`
 
 Arquivos principais da stack:
 
@@ -200,9 +201,12 @@ Isso é necessário para o fallback da SPA no GitHub Pages. Sem isso, refresh di
 - Toda mudança deve terminar com validação obrigatória:
 
 ```bash
+npm run check
 npm run build
 ```
 
+- `npm run check` é a validação principal porque executa `npm run typecheck && npm run build`.
+- `npm run build` continua obrigatório como verificação explícita final de empacotamento.
 - Não deixar imports órfãos.
 - Não referenciar assets inexistentes.
 - Não depender de variáveis de ambiente que não existam no build do GitHub Actions.
@@ -256,7 +260,8 @@ Ao adicionar um novo projeto:
 5. inserir o projeto em `src/app/data/i18n/index.ts`
 6. validar listagem em `Cases`
 7. validar detalhe em `CaseStudy`
-8. executar `npm run build`
+8. executar `npm run check`
+9. executar `npm run build`
 
 ### Estrutura esperada
 
@@ -291,7 +296,8 @@ Esses pontos concentram a maior parte do risco de quebrar navegação, conteúdo
 Ao concluir qualquer alteração neste projeto:
 
 ```bash
+npm run check
 npm run build
 ```
 
-Se o build falhar, a tarefa não está concluída.
+Se qualquer um desses comandos falhar, a tarefa não está concluída.
